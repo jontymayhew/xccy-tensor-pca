@@ -23,10 +23,14 @@ jupyter nbconvert --to notebook --execute notebooks/03_Tensor_PCA.ipynb --inplac
 
 Notebook 03 exports figures to `report/figures/`.
 
-## Build the report
 
-```bash
-cd report
-pandoc xccy_tensor_pca_report.md -o xccy_tensor_pca_report.docx \
-  --toc --number-sections --mathml --resource-path=.
-```
+
+
+## Reproducibility
+
+- **Quick start (no ORE):** the precomputed `data/zero_rate_tensor.npz` is
+  included — just run `notebooks/03_Tensor_PCA.ipynb` to reproduce the PCA /
+  Tensor-PCA analysis and figures.
+- **Full rebuild (needs ORE):** to regenerate the tensor from market data, run
+  notebooks `01` and `02` first (`open-source-risk-engine` from
+  `requirements.txt` — no source build required).

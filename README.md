@@ -23,6 +23,11 @@ jupyter nbconvert --to notebook --execute notebooks/03_Tensor_PCA.ipynb --inplac
 
 Notebook 03 exports figures to `report/figures/`.
 
+`notebooks/TensorFormulas.ipynb` is a methodology/formulas companion and is **not
+standalone**: it has no imports or data loading and reuses the kernel state from
+`03_Tensor_PCA.ipynb`. Run notebook `03` first, then run `TensorFormulas.ipynb`
+in the **same kernel session**.
+
 
 
 
